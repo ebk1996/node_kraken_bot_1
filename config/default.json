@@ -1,0 +1,36 @@
+{
+  "exchange": {
+    "name": "kraken",
+    "symbols": ["BTC/USD", "ETH/USD"],
+    "timeframe": "1h",
+    "fetchLimit": 500
+  },
+  "trading": {
+    "dryRun": false,
+    "maxConcurrentTrades": 3,
+    "cooldownPeriod": 3600000,
+    "enablePaperTrading": true
+  },
+  "risk": {
+    "maxRiskPerTrade": 0.02,
+    "maxTotalRisk": 0.10,
+    "stopLossPercentage": 0.05,
+    "takeProfitPercentage": 0.15,
+    "minimumBalance": 100
+  },
+  "logging": {
+    "level": "info",
+    "filename": "logs/trading.log",
+    "maxFiles": 5,
+    "maxsize": "10m"
+  },
+  "notifications": {
+    "enabled": true,
+    "telegram": {
+      "enabled": false,
+      "onTrade": true,
+      "onError": true,
+      "onProfit": true
+    }
+  }
+}

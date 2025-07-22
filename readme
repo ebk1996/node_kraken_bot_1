@@ -1,0 +1,20 @@
+Running the Bot
+Development/Live Trading:
+
+Bash
+
+npm start
+(You'll define start script in package.json to run index.js)
+
+Paper Trading:
+Set MODE=paper in .env and run:
+
+Bash
+
+npm start
+Backtesting:
+Set MODE=backtest in .env, configure BACKTEST_START_DATE, BACKTEST_END_DATE, BACKTEST_SYMBOL, BACKTEST_TIMEFRAME and ensure you have historical data in data/. Then run:
+
+Bash
+
+npm start

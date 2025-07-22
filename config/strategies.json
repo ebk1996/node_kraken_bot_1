@@ -1,0 +1,35 @@
+{
+  "RSI_EMA_Confluence": {
+    "enabled": true,
+    "symbols": ["BTC/USD", "ETH/USD"],
+    "params": {
+      "rsiPeriod": 14,
+      "rsiOverbought": 70,
+      "rsiOversold": 30,
+      "fastEmaPeriod": 12,
+      "slowEmaPeriod": 26,
+      "volumeThreshold": 1.5
+    },
+    "riskManagement": {
+      "positionSize": 0.1,
+      "stopLoss": 0.05,
+      "takeProfit": 0.15
+    }
+  },
+  "MACD_BB": {
+    "enabled": false,
+    "symbols": ["BTC/USD"],
+    "params": {
+      "macdFast": 12,
+      "macdSlow": 26,
+      "macdSignal": 9,
+      "bbPeriod": 20,
+      "bbStdDev": 2
+    },
+    "riskManagement": {
+      "positionSize": 0.08,
+      "stopLoss": 0.04,
+      "takeProfit": 0.12
+    }
+  }
+}

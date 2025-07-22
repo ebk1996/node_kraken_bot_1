@@ -1,0 +1,34 @@
+{
+  "exchange": {
+    "name": "kraken",
+    "symbols": ["BTC/USD", "ETH/USD"],
+    "timeframe": "1m",
+    "futuresEnabled": false,
+    "websocketEnabled": true
+  },
+  "trading": {
+    "dryRun": false,
+    "slippageTolerance": 0.001
+  },
+  "riskManagement": {
+    "dynamicLotSizing": true,
+    "maxOpenPositions": 5,
+    "coolDownPeriodMs": 60000
+  },
+  "notifications": {
+    "telegram": {
+      "enabled": true,
+      "tradeAlerts": true,
+      "summaryReports": true
+    },
+    "discord": {
+      "enabled": false,
+      "webhookUrl": ""
+    }
+  },
+  "ai": {
+    "enabled": false,
+    "anomalyDetectionThreshold": 3,
+    "reinforcementLearningModelPath": ""
+  }
+}
